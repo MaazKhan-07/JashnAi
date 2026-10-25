@@ -1,0 +1,130 @@
+/* ── Design Tokens ── */
+:root {
+  /* Colors — warm celebration palette */
+  --clr-primary: #E85D04;
+  --clr-primary-light: #F48C06;
+  --clr-primary-dark: #DC2F02;
+  --clr-accent: #7B2CBF;
+  --clr-accent-light: #9D4EDD;
+  --clr-success: #2D6A4F;
+  --clr-success-light: #40916C;
+  --clr-warning: #E09F3E;
+  --clr-warning-dark: #B07D29;
+  --clr-danger: #D62828;
+  --clr-danger-light: #EF476F;
+  --clr-info: #0077B6;
+
+  /* Neutrals */
+  --clr-bg: #FEFAE0;
+  --clr-bg-alt: #FFF8E7;
+  --clr-surface: #FFFFFF;
+  --clr-surface-alt: #F9F5EB;
+  --clr-border: #DDD5C0;
+  --clr-text: #2B2D42;
+  --clr-text-muted: #6B705C;
+  --clr-text-light: #8D99AE;
+
+  /* Gradients */
+  --grad-hero: linear-gradient(135deg, #FFF1D0 0%, #FFE0B2 50%, #FFCC80 100%);
+  --grad-primary: linear-gradient(135deg, #E85D04, #F48C06);
+  --grad-accent: linear-gradient(135deg, #7B2CBF, #9D4EDD);
+  --grad-card: linear-gradient(145deg, #FFFFFF, #FFF8E7);
+
+  /* Typography */
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  --font-mono: 'Cascadia Code', 'Fira Code', 'Consolas', monospace;
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-md: 1.125rem;
+  --fs-lg: 1.25rem;
+  --fs-xl: 1.5rem;
+  --fs-2xl: 2rem;
+  --fs-3xl: 2.5rem;
+  --fs-4xl: 3rem;
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  /* Spacing */
+  --sp-1: 0.25rem;
+  --sp-2: 0.5rem;
+  --sp-3: 0.75rem;
+  --sp-4: 1rem;
+  --sp-5: 1.25rem;
+  --sp-6: 1.5rem;
+  --sp-8: 2rem;
+  --sp-10: 2.5rem;
+  --sp-12: 3rem;
+  --sp-16: 4rem;
+
+  /* Borders & Radii */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.1);
+  --shadow-lg: 0 8px 30px rgba(0,0,0,0.12);
+  --shadow-xl: 0 16px 48px rgba(0,0,0,0.15);
+
+  /* Transitions */
+  --transition: 200ms ease;
+  --transition-slow: 400ms ease;
+
+  /* Z-indices */
+  --z-nav: 100;
+  --z-modal: 200;
+  --z-toast: 300;
+  --z-overlay: 250;
+
+  /* Layout */
+  --max-width: 1200px;
+  --sidebar-width: 280px;
+  --header-height: 64px;
+}
+
+/* ── Dark Theme ── */
+[data-theme="dark"] {
+  --clr-bg: #1A1A2E;
+  --clr-bg-alt: #16213E;
+  --clr-surface: #0F3460;
+  --clr-surface-alt: #1A1A3E;
+  --clr-border: #334155;
+  --clr-text: #E2E8F0;
+  --clr-text-muted: #94A3B8;
+  --clr-text-light: #64748B;
+  --grad-hero: linear-gradient(135deg, #1A1A2E 0%, #16213E 50%, #0F3460 100%);
+  --grad-card: linear-gradient(145deg, #0F3460, #1A1A3E);
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.3);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.35);
+  --shadow-lg: 0 8px 30px rgba(0,0,0,0.4);
+}
+
+/* ── Reduced Motion ── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ── System preference ── */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --clr-bg: #1A1A2E;
+    --clr-bg-alt: #16213E;
+    --clr-surface: #0F3460;
+    --clr-surface-alt: #1A1A3E;
+    --clr-border: #334155;
+    --clr-text: #E2E8F0;
+    --clr-text-muted: #94A3B8;
+    --clr-text-light: #64748B;
+    --grad-hero: linear-gradient(135deg, #1A1A2E 0%, #16213E 50%, #0F3460 100%);
+    --grad-card: linear-gradient(145deg, #0F3460, #1A1A3E);
+  }
+}
