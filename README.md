@@ -3,9 +3,9 @@
 > **"Jashn"** *(noun)*: Celebration, festivities, and shared moments of joy.
 >
 > Built for the **Google Virtual Prompt Wars** Challenge: *Celebration & Event Planner*.
-
+> Built for learning purpose.
 ---
-
+**Live demo:**
 ## 🌟 Overview
 
 **Jashn** is a GenAI-powered celebration and event planning assistant engineered to help anyone organize unforgettable **weddings, birthdays, community festivals, and social gatherings**. 
@@ -20,50 +20,7 @@ It eliminates planning chaos by orchestrating:
 
 ---
 
-## 🚀 Instant Quickstart (Zero Configuration)
 
-Jashn is designed to run seamlessly out of the box with **no API keys required**:
-
-```bash
-# 1. Install dependencies
-npm install
-
-# 2. Start the server
-npm start
-```
-
-Open your browser at:
-👉 **[http://localhost:8080](http://localhost:8080)** (or custom `PORT=8080`)
-
-### Optional: Google Gemini API Key
-To enable live online Gemini 2.0 Flash models instead of the built-in deterministic offline intelligence engine:
-1. Copy `.env.example` to `.env`
-2. Add your Gemini API key:
-   ```env
-   GEMINI_API_KEY=your_gemini_api_key_here
-   PORT=8080
-   ```
-3. Restart the server (`npm start`). Jashn will automatically detect the key and show the **✨ Powered by Gemini AI** badge.
-
----
-
-## 🧪 Automated Test Suite
-
-Jashn includes **77 automated tests** covering all budget calculations, timeline compression, offline intent classification, schema validation, and API routes:
-
-```bash
-npm test
-```
-
-### Test Coverage Highlights:
-- **Budget Engine**: Exact cent/rupee largest-remainder rounding, priority weighting boosts, tight-budget detection, contingency scaling.
-- **Timeline Engine**: Date boundary validation, chronological ordering, lead-time compression ratio calculation, critical task prioritization.
-- **Offline Intelligence Engine**: Deterministic menu generation, dietary compliance checks (no non-veg items in veg/vegan modes), theme recommendations.
-- **NLP Intent Handler**: Accurate classification for budget, task, readiness, rain plan, headcount, and countdown queries.
-- **Readiness Scoring**: Multi-factor 0–100 preparedness algorithm weighting milestones, budget variance, and vendor booking contracts.
-- **Zod Schema Validation**: Safe rejection of invalid types, negative budgets, and oversized payloads.
-
----
 
 ## 🎨 Design & Accessibility Principles
 
