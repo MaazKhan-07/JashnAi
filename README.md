@@ -5,7 +5,7 @@
 > Built for the **Google Virtual Prompt Wars** Challenge: *Celebration & Event Planner*.
 > Built for learning purpose.
 ---
-**Live demo:**
+**Live demo:** https://jashnai.vercel.app
 ## 🌟 Overview
 
 **Jashn** is a GenAI-powered celebration and event planning assistant engineered to help anyone organize unforgettable **weddings, birthdays, community festivals, and social gatherings**. 
